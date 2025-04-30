@@ -98,4 +98,15 @@ http://localhost:5000/uploads/{filename}
    - View all members
    - View individual member details
 
+## 🖼️ Screenshots
+
+### 🔹 Home Page
+![Home Page](./screenshots/homepage.png)
+
+### 🔹 Add Member Form
+![Add Member](./screenshots/add-member-form.png)
+
+### 🔹 Team Members Tab
+![Team Member](./screenshots/team-member.png)
+
 
