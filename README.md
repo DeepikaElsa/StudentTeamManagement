@@ -4,7 +4,7 @@
 
 ## 📘 Project Description
 
-TeamSync is a full-stack web application designed to manage student team members efficiently. It enables users to add, view, and manage detailed member profiles, including role, contact information, and profile images. The project is built using **React (Vite + TypeScript)** for the frontend and **Node.js + Express + MongoDB** for the backend. It provides a clean UI and seamless interaction between frontend and backend through RESTful APIs.
+TeamSync is a full-stack web application for managing student team members. It allows users to add, view, and manage detailed member profiles including name, role, email, and a profile image. Built using **React (Vite + TypeScript)** and **Node.js + Express + MongoDB**, the app provides clean navigation and responsive features for effective team collaboration.
 
 ---
 
@@ -12,7 +12,7 @@ TeamSync is a full-stack web application designed to manage student team members
 
 ### 🔧 Prerequisites
 - Node.js and npm installed
-- MongoDB running locally (or MongoDB Atlas URI)
+- MongoDB running locally (or Atlas)
 - Git
 
 ---
@@ -29,22 +29,30 @@ cd backend
 npm install
 ```
 
-3. Create a `.env` file inside `backend/` and add:
+> This installs:
+> - `express` – server framework  
+> - `mongoose` – MongoDB connection  
+> - `multer` – image upload  
+> - `cors` – cross-origin requests  
+> - `dotenv` – environment variables  
+> - `nodemon` – auto-restarts for development
+
+3. Create a `.env` file inside `backend/`:
 ```env
 PORT=5000
 MONGODB_URI=mongodb://localhost:27017/student-team-management
 ```
 
-4. Run the backend server:
+4. Start the backend server:
 ```bash
-npm run dev     # or use: node server.js
+nodemon server.js
 ```
 
 ---
 
 ### 💻 Frontend Setup
 
-1. Navigate back to the root directory:
+1. Navigate to the root directory:
 ```bash
 cd ..
 ```
@@ -59,7 +67,8 @@ npm install
 npm run dev
 ```
 
-4. Access the frontend at: [http://localhost:5173](http://localhost:5173)
+4. Open the app in browser:  
+[http://localhost:5173](http://localhost:5173)
 
 ---
 
@@ -80,33 +89,34 @@ http://localhost:5000/uploads/{filename}
 
 ## 🚀 How to Run the App
 
-1. **Start MongoDB locally** (e.g., via MongoDB Compass or CLI).
-2. **Start the backend:**
+1. **Start MongoDB** (locally or on Atlas).
+2. **Start backend**:
    ```bash
    cd backend
    npm run dev
    ```
-3. **Start the frontend:**
+3. **Start frontend**:
    ```bash
    cd ..
    npm run dev
    ```
-4. **Visit the application:**  
-   Open [http://localhost:5173](http://localhost:5173) in your browser.
-5. Use the app to:
-   - Add new members
+4. **Use the app**:
+   - Add members
    - View all members
-   - View individual member details
+   - View member details
 
-## 🖼️ Screenshots
+---
 
-### 🔹 Home Page
-![Home Page](./screenshots/homepage.png)
+## 📸 Screenshots
 
-### 🔹 Add Member Form
-![Add Member](./screenshots/add-member-form.png)
+### 🏠 Home Page
+![Home Page](./screenshorts/homepage.png)
 
-### 🔹 Team Members Tab
-![Team Member](./screenshots/team-member.png)
+### 📝 Add Member Form
+![Add Member Form](./screenshorts/add-member-form.png)
 
+### 👤 Member Detail Page
+![Member Detail](./screenshorts/team-member.png)
+
+---
 
