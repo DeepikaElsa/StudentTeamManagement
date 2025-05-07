@@ -5,6 +5,7 @@
 ## 📘 Project Description
 
 TeamSync is a full-stack web application for managing student team members. It allows users to add, view, and manage detailed member profiles including name, role, email, and a profile image. Built using **React (Vite + TypeScript)** and **Node.js + Express + MongoDB**, the app provides clean navigation and responsive features for effective team collaboration.
+Site Deployed at : https://studentteammanager.netlify.app/
 
 ---
 
